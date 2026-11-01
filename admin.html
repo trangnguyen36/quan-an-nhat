@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đơn hàng - Quán ăn Nhật</title>
+    <link rel="stylesheet" href="./styles/admin.css" />
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav>
+        <div class="logo">
+            <div class="logo-icon"></div>
+            Quán ăn Nhật - Admin
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="container">
+        <h1 class="page-title">Quản lý danh sách đơn hàng</h1>
+
+        <div class="top-bar">
+            <input type="text" id="search-box" class="search-box" placeholder="Tìm kiếm món ăn, tên khách hàng...">
+        </div>
+
+        <div class="table-card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Khách hàng</th>
+                        <th>Hình ảnh</th>
+                        <th>Tên món ăn</th>
+                        <th>Giá tiền</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="orderList">
+                    <tr><td colspan="8" style="text-align: center;">Đang tải danh sách đơn hàng...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © Quản lý hệ thống Quán ăn Nhật
+    </footer>
+
+    <script type="module" src="./scripts/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+<body>
+    <!-- Thanh điều hướng (Navbar) - Chuẩn như Trang 1 -->
+    <nav class="navbar navbar-expand-lg py-4">
+
+        <div class="container">
+            <!-- Giới hạn chiều rộng nội dung và căn giữa -->
+
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <!-- Logo và tên thương hiệu -->
+
+                <span class="logo-box">🍣</span>
+                <!-- Biểu tượng sushi -->
+
+                Quán ăn Nhật
+            </a>
+
+            <!-- Nút menu dành cho giao diện điện thoại -->
+            <button class="navbar-toggler border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Khu vực menu điều hướng -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto gap-3">
+                    <!-- ms-auto đẩy menu sang phải -->
+                    <!-- gap-3 tạo khoảng cách giữa các mục -->
+
+                    <li>
+                        <a class="btn-sakura" href="./index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href="./menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href="./about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href="./order.html">
+                            Order Now
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Khu vực hiển thị avatar người dùng sau khi đăng nhập -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nội dung chính của Trang 2 (Chia đều 50/50) -->
+    <main class="container py-5">
+
+        <div class="row align-items-center g-5">
+            <!-- Cột trái (50%): Hình ảnh giới thiệu -->
+            <div class="col-lg-6">
+
+                <div class="position-relative">
+                    <img
+                        src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop"
+                        class="img-fluid shadow-lg"
+                        style="border-radius: 40px; border: 10px solid white;"
+                        alt="Không gian quán">
+
+                    <!-- Khung thống kê -->
+                    <div
+                        class="position-absolute bottom-0 start-0 m-4 p-4 shadow-lg text-center"
+                        style="background:white; border-radius:25px; min-width:150px;">
+
+                        <h2 class="fw-bold mb-0 text-danger">
+                            10+
+                        </h2>
+
+                        <small class="text-muted">
+                            Năm kinh nghiệm
+                        </small>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Cột phải (50%): Văn bản giới thiệu -->
+            <div class="col-lg-6">
+
+                <h6
+                    class="text-uppercase fw-bold"
+                    style="color: var(--dark-red); letter-spacing:2px;">
+                    Về Chúng Tôi
+                </h6>
+
+                <h2
+                    class="display-5 fw-bold mb-4"
+                    style="font-family:'Playfair Display', serif;">
+                    Hành trình mang tinh hoa Nhật Bản đến Việt Nam
+                </h2>
+
+                <p class="text-secondary mb-4">
+                    Bắt đầu từ một cửa hàng nhỏ ven đường tại Kyoto,
+                    Sakura Cuisine mang theo sứ mệnh truyền tải trọn vẹn
+                    sự tinh tế và tâm huyết của ẩm thực Phù Tang.
+                    Chúng tôi tin rằng mỗi món ăn không chỉ là thực phẩm,
+                    mà là một tác phẩm nghệ thuật.
+                </p>
+
+                <!-- Các điểm nổi bật -->
+                <div class="row g-3">
+
+                    <div class="col-sm-6">
+
+                        <div class="p-3"
+                             style="background:rgba(255,255,255,0.4);
+                                    border-radius:20px;
+                                    border-left:5px solid var(--dark-red);">
+
+                            <h6 class="fw-bold mb-1">
+                                🌿 Nguyên liệu tươi
+                            </h6>
+
+                            <small class="text-muted">
+                                Nhập khẩu trực tiếp từ chợ cá Tsukiji mỗi ngày.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6">
+
+                        <div class="p-3"
+                             style="background:rgba(255,255,255,0.4);
+                                    border-radius:20px;
+                                    border-left:5px solid var(--dark-red);">
+
+                            <h6 class="fw-bold mb-1">
+                                👨‍🍳 Đầu bếp Nhật
+                            </h6>
+
+                            <small class="text-muted">
+                                Được dẫn dắt bởi các bậc thầy với hơn 20 năm nghề.
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
+</body>
+</html> 
+

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu | Trang Chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+<body>
+       <!-- Thanh điều hướng (Navbar) -->
+    <nav class="navbar navbar-expand-lg py-4">
+
+        <div class="container">
+            <!-- Giới hạn chiều rộng nội dung và căn giữa -->
+
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <!-- Logo và tên thương hiệu -->
+
+                <span class="logo-box">🍣</span>
+                <!-- Biểu tượng sushi -->
+
+                Quán ăn Nhật
+            </a>
+
+            <!-- Nút menu dành cho giao diện điện thoại -->
+            <button class="navbar-toggler border-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Khu vực menu điều hướng -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto gap-3">
+                    <!-- ms-auto đẩy menu sang phải -->
+                    <!-- gap-3 tạo khoảng cách giữa các mục -->
+
+                    <li>
+                        <a class="btn-sakura" href = "./index.html";>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href = "./menu.html";>
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href="./abuot.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href="order.html">
+                            Order Now
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Khu vực hiển thị avatar người dùng sau khi đăng nhập -->
+                <div id="avatar-action-container"></div>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="menu" class="container py-5"> <div class="text-center mb-5"> <h2 class="display-4 fw-bold">Thực Đơn Nổi Bật</h2> <div class="mx-auto" style="width: 80px; height: 4px; background: var(--dark-red); border-radius: 2px;"></div> </div> <div class="row g-4 d-flex align-items-stretch"> <div class="col-md-6 col-lg-4"> <div class="menu-card shadow-sm"> <div class="menu-img-container"> <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Sushi_%2826478755502%29.jpg" alt="Sushi"> <span class="price-tag">150.000đ</span> </div> <div class="menu-info"> <h4 class="fw-bold">Sushi Tổng Hợp</h4> <p class="text-secondary small">Cá hồi tươi, tôm, lươn nhật kèm cơm dẻo chuẩn vị.</p> <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button> </div> </div> </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://www.order.capichiapp.com/_next/image?url=https%3A%2F%2Fcdn.capichiapp.com%2Fimage_deliveries%2Fimages%2F000%2F549%2F123%2Foriginal%2F1._M%25C3%25AC_Naruto_ramen.png%3F1718782141&w=3840&q=75" alt="Ramen">
+                        <span class="price-tag">120.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Mì Ramen Đặc Biệt</h4>
+                        <p class="text-secondary small">Nước dùng xương hầm 12 tiếng, thịt xá xíu tan trong miệng.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://sushiworld.com.vn/wp-content/uploads/2024/05/Sushi-va-Sashimi-2.jpg" alt="Sashimi">
+                        <span class="price-tag">250.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Sashimi Cá Hồi</h4>
+                        <p class="text-secondary small">Từng lát cá tươi rói, cắt dày, ăn kèm mù tạt chuẩn Nhật.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkPaG8YBIgOjK7w_hL1wasoj4Y1hID9Q6ZQ&s" alt="Ramen">
+                        <span class="price-tag">110.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Tonkatsu</h4>
+                        <p class="text-secondary small">Thịt heo thăn tẩm bột chiên xù, giòn tan bên ngoài, mọng nước bên trong.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xxo1G3BlETKIu9i2fA4498kDNt6BsJAKcQ&s" alt="Ramen">
+                        <span class="price-tag">110.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Tempura Tổng hợp</h4>
+                        <p class="text-secondary small">Tôm và rau củ mùa hè tẩm bột chiên kiểu Nhật.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-anVR6PeZFpczvbE80uLQXJ-p8seTZfBfpA&s" alt="Ramen">
+                        <span class="price-tag">100.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Yakitori</h4>
+                        <p class="text-secondary small">Gà xiên que nướng than hồng với sốt Tare đặc trưng..</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://en.bentoandco.com/cdn/shop/articles/IMG_2417_f767dac7-af1d-48d3-819c-37558f6193e4.jpg?v=1741854061" alt="Ramen">
+                        <span class="price-tag">108.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Okonomiyaki</h4>
+                        <p class="text-secondary small">Bánh xèo Nhật Bản với lớp nhân hải sản và sốt béo ngậy.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgFXp8l1Jm6TYfqtffI6Oy4-k7aCAfobjIQ&s" alt="Ramen">
+                        <span class="price-tag">115.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Mì Udon</h4>
+                        <p class="text-secondary small">Sợi mì trắng muốt, dai giòn, ăn kèm nước dùng Dashi thanh khiết.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXHL3HX6R1xEBeYSwJcqmYVf5KOMuzN1xIQ&s" alt="Ramen">
+                        <span class="price-tag">215.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Lẩu Sukiyaki</h4>
+                        <p class="text-secondary small">Lẩu bò thái mỏng nấu cùng đậu phụ và nấm trong nước dùng ngọt thanh.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTanHoGn1tjXParI40N8kyXKmGQwBG-b7c9Kg&s" alt="Ramen">
+                        <span class="price-tag">100.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Katsudon</h4>
+                        <p class="text-secondary small">Cơm thịt heo chiên xù nấu cùng trứng và sốt mặn ngọt.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://simbaeshop.com/upload/images/others/unnamed%20(4).jpg" alt="Ramen">
+                        <span class="price-tag">115.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">cà ri nhật bản</h4>
+                        <p class="text-secondary small">Sốt cà ri đặc sánh, vị ngọt từ rau củ, ăn rất "vào" cơm.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="menu-card shadow-sm">
+                    <div class="menu-img-container">
+                        <img src="https://www.manusmenu.com/wp-content/uploads/2017/08/tuna-mayo-onigiri-japanese-rice-balls.webp" alt="Ramen">
+                        <span class="price-tag">40.000đ</span>
+                    </div>
+                    <div class="menu-info">
+                        <h4 class="fw-bold">Onigiri</h4>
+                        <p class="text-secondary small">Cơm nắm hình tam giác bọc rong biển - món ăn tiện lợi quốc dân.</p>
+                        <button class="btn-sakura w-100 py-2">Thêm vào giỏ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

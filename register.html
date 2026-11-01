@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- Khai báo tài liệu HTML5 -->
+<html lang="en"> <!-- Thẻ gốc của trang web, ngôn ngữ là tiếng Anh -->
+
+<head>
+    <meta charset="UTF-8" /> <!-- Hỗ trợ hiển thị tiếng Việt và các ký tự đặc biệt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Giúp giao diện hiển thị tốt trên điện thoại -->
+    
+    <title>Register</title> <!-- Tiêu đề hiển thị trên tab trình duyệt -->
+
+    <link rel="stylesheet" href="./styles/auth.css" />
+    <!-- Liên kết tới file CSS để định dạng giao diện -->
+</head>
+
+<body>
+
+    <!-- Khung chứa toàn bộ form đăng ký -->
+    <div class="form-wrapper">
+
+        <!-- Tiêu đề form -->
+        <h2>Sign Up</h2>
+
+        <!-- Form đăng ký -->
+        <form action="#">
+
+            <!-- Ô nhập Username -->
+            <div class="form-control">
+                <input id="username" type="text" required />
+                <!-- required: bắt buộc nhập dữ liệu -->
+
+                <label>Username</label>
+            </div>
+            
+            <!-- Ô nhập Email -->
+            <div class="form-control">
+                <input id="email" type="text" required />
+                <label>Email address</label>
+            </div>
+
+            <!-- Ô nhập Password -->
+            <div class="form-control">
+                <input id="password" type="password" required />
+                <!-- type="password" giúp ẩn ký tự khi nhập -->
+
+                <label>Password</label>
+            </div>
+
+            <!-- Nút gửi form -->
+            <button type="submit">Sign Up</button>
+
+            <!-- Khu vực hỗ trợ -->
+            <div class="form-help">
+
+                <!-- Checkbox ghi nhớ đăng nhập -->
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me" />
+
+                    <label for="remember-me">
+                        Remember me
+                    </label>
+                </div>
+
+                <!-- Liên kết trợ giúp -->
+                <a href="#">Need help?</a>
+
+            </div>
+
+        </form>
+
+        <!-- Chuyển sang trang đăng nhập nếu đã có tài khoản -->
+        <p>
+            Already have an account?
+            <a href="./login.html">Sign in now</a>
+        </p>
+
+    </div>
+
+    <!-- Liên kết file JavaScript xử lý đăng ký -->
+    <script src="./scripts/register.js"></script>
+
+</body>
+</html>

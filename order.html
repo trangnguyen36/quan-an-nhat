@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Quán ăn Nhật</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+<body>
+    <!-- Thanh điều hướng (Navbar) -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <span class="logo-box">🍣</span> Quán ăn Nhật
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li><a class="btn-sakura" href="./index.html">Home</a></li>
+                    <li><a class="btn-sakura" href="./menu.html">Menu</a></li>
+                    <li><a class="btn-sakura" href="about.html">About</a></li>
+                    <li><a class="btn-sakura" href="order.html">Order Now</a></li>
+                </ul>
+                <div id="avatar-action-container"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Order -->
+    <section id="order" class="container py-5">
+        <div class="order-container p-4 p-lg-5 shadow-lg">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 text-white">
+                    <h2 class="display-5 fw-bold mb-4" style="font-family: 'Playfair Display', serif;">Đặt bàn & Giao hàng</h2>
+                    <p class="mb-4">Nhận ngay ưu đãi <strong>giảm giá 15%</strong> cho lần đặt đầu tiên qua website. Chúng tôi giao hàng nhanh trong vòng 30 phút!</p>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="fs-3 me-3">📍</div>
+                        <div>123 đường Tân Uyên, Quận 1, TP. HCM</div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="fs-3 me-3">📞</div>
+                        <div>Hotline: 1900 1234</div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="bg-white p-4 p-md-5" style="border-radius: 30px;">
+                        <form id="orderForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small">Họ và tên</label>
+                                    <input type="text" id="fullname" class="form-control rounded-pill border-light bg-light" placeholder="Nguyễn Văn A" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-bold small">Số điện thoại</label>
+                                    <input type="tel" id="phone" class="form-control rounded-pill border-light bg-light" placeholder="0901 234 567" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-bold small">Chọn món ăn</label>
+                                    <select id="dish" class="form-select rounded-pill border-light bg-light" required>
+                                        <option value="" selected disabled>Chọn món bạn muốn mua...</option>
+                                        <option value="Sushi Tổng Hợp" data-price="150.000đ" data-image="https://upload.wikimedia.org/wikipedia/commons/d/d2/Sushi_%2826478755502%29.jpg">Sushi Tổng Hợp</option>
+                                        <option value="Mì Ramen Đặc Biệt" data-price="120.000đ" data-image="https://www.order.capichiapp.com/_next/image?url=https%3A%2F%2Fcdn.capichiapp.com%2Fimage_deliveries%2Fimages%2F000%2F549%2F123%2Foriginal%2F1._M%25C3%25AC_Naruto_ramen.png%3F1718782141&w=3840&q=75">Mì Ramen Đặc Biệt</option>
+                                        <option value="Sashimi Cá Hồi" data-price="250.000đ" data-image="https://sushiworld.com.vn/wp-content/uploads/2024/05/Sushi-va-Sashimi-2.jpg">Sashimi Cá Hồi</option>
+                                        <option value="Tonkatsu" data-price="110.000đ" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqkPaG8YBIgOjK7w_hL1wasoj4Y1hID9Q6ZQ&s">Tonkatsu</option>
+                                        <option value="Tempura Tổng hợp" data-price="110.000đ" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xxo1G3BlETKIu9i2fA4498kDNt6BsJAKcQ&s">Tempura Tổng hợp</option>
+                                        <option value="Yakitori" data-price="100.000đ" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-anVR6PeZFpczvbE80uLQXJ-p8seTZfBfpA&s">Yakitori</option>
+                                        <option value="Okonomiyaki" data-price="108.000đ" data-image="https://en.bentoandco.com/cdn/shop/articles/IMG_2417_f767dac7-af1d-48d3-819c-37558f6193e4.jpg?v=1741854061">Okonomiyaki</option>
+                                        <option value="Mì Udon" data-price="115.000đ" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDgFXp8l1Jm6TYfqtffI6Oy4-k7aCAfobjIQ&s">Mì Udon</option>
+                                        <option value="Lẩu Sukiyaki" data-price="215.000đ" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXHL3HX6R1xEBeYSwJcqmYVf5KOMuzN1xIQ&s">Lẩu Sukiyaki</option>
+                                        <option value="Katsudon" data-price="100.000đ" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTanHoGn1tjXParI40N8kyXKmGQwBG-b7c9Kg&s">Katsudon</option>
+                                        <option value="Cà ri Nhật Bản" data-price="115.000đ" data-image="https://simbaeshop.com/upload/images/others/unnamed%20(4).jpg">Cà ri Nhật Bản</option>
+                                        <option value="Onigiri" data-price="40.000đ" data-image="https://www.manusmenu.com/wp-content/uploads/2017/08/tuna-mayo-onigiri-japanese-rice-balls.webp">Onigiri</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" id="submitBtn" class="btn-sakura px-5 py-3 w-100 fs-5">XÁC NHẬN ĐẶT HÀNG</button>
+                                    <p class="text-muted small mt-3">Chúng tôi sẽ gọi điện xác nhận trong vòng 2 phút.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="./scripts/order.js"></script>
+</body>
+</html>
