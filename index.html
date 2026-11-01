@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Cuisine | Trang Chủ</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css" />
+</head>
+
+<body>
+
+    <!-- Thanh điều hướng (Navbar) -->
+    <nav class="navbar navbar-expand-lg py-4">
+
+        <div class="container">
+            <!-- Giới hạn chiều rộng nội dung và căn giữa -->
+
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <!-- Logo và tên thương hiệu -->
+
+                <span class="logo-box">🍣</span>
+                <!-- Biểu tượng sushi -->
+
+                Quán ăn Nhật
+            </a>
+
+            <!-- Khu vực menu điều hướng -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto gap-3">
+                    <!-- ms-auto đẩy menu sang phải -->
+                    <!-- gap-3 tạo khoảng cách giữa các mục -->
+
+                    <li>
+                        <a class="btn-sakura" href="./index.html">
+                            home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href = "./menu.html";>
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href="abuot.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="btn-sakura" href="order.html">
+                            Order Now
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Khu vực hiển thị avatar người dùng sau khi đăng nhập -->
+                <div id="avatar-action-container"></div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nội dung chính của trang -->
+    <main class="container py-5">
+
+        <div class="row align-items-center">
+            <!-- Chia thành 2 cột và căn giữa theo chiều dọc -->
+
+            <div class="col-lg-6">
+                <!-- Cột bên trái -->
+
+                <h1 class="display-2 fw-bold mb-4">
+                    Ẩm thực Nhật Bản chính thống
+                </h1>
+
+                <p class="lead text-secondary mb-5">
+                    Trải nghiệm tinh hoa ẩm thực với nguyên liệu tươi ngon nhất mỗi ngày.
+                </p>
+
+                <a href="./menu.html"
+                   class="btn-sakura px-5 py-3 fs-5">
+                    Khám phá Menu
+                </a>
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <!-- Cột bên phải -->
+
+                <img
+                    src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=1000&auto=format&fit=crop"
+                    class="img-fluid main-hero-img"
+                    alt="Japanese Dish">
+
+                <!-- img-fluid giúp ảnh co giãn theo màn hình -->
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
+    <footer class="text-center py-4 mt-5" style="background: var(--dark-red); color: white;">
+        <p class="mb-0">&copy; Chúc bạn một bữa ăn ngon miệng và trọn vẹn niềm vui!</p>
+    </footer>
+</body>
+</html>
